@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css" />
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
+    <title>ERB Security</title>
+</head>
+
+<body>
+    <div class="page">
+        <div class="sidebar">
+            <div class="head">
+                <div class="logo">
+                    <img src="assets/shield-logo-symbol-for-security-system-vector-removebg-preview 1.svg" alt="Logo" />
+                </div>
+                <span class="menu-icon close"><i class="uil uil-times"></i></span>
+            </div>
+            <ul class="links list-unstyled p-0 m-0">
+                <li>
+                    <a href="index.html" class="link active  d-block w-100 px-3 py-2">اضافه محضر</a>
+                </li>
+                <li>
+                    <a href="viewgovernmentreports.html" class="link  d-block w-100 px-3 py-2">عرض المحاضر</a>
+                </li>
+                <li>
+                    <a href="DepartmentofTrustsandSafes.html" class="link d-block w-100 px-3 py-2">اداره الامانات والحرز</a>
+                </li>
+                <li>
+                    <a href="" class="link  d-block w-100 px-3 py-2">تسجيل الخروج</a>
+                </li>
+               
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="header">
+                <div class="container d-flex justify-content-between align-items-center py-3">
+                    <div class="name mx-3 d-flex align-items-center gap-3">
+                        <span class="menu-icon open"><i class="uil uil-bars"></i></span>
+                        <h1 class="h4 mb-0">صفحه المحاضر</h1>
+                    </div>
+                    <div class="dropdown user mx-3">
+                        <div class="dropdown-toggle d-flex align-items-center justify-content-between w-100"
+                            id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false" role="button"
+                            style="min-width: 180px;">
+                            <div class="d-flex gap-2 align-items-center">
+                                <div class="image me-2">
+                                    <img src="assets/admin.jpeg" alt="admin" class="rounded-circle" width="32"
+                                        height="32" />
+                                </div>
+                                <span>Admin</span>
+                            </div>
+                        </div>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                            <li><a class="dropdown-item" href="#">تسجيل الخروج</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrapper mt-0">
+                <div class="container">
+                    <div class="data-table mb-3">
+                        <div
+                            class="data-table-controls d-flex justify-content-between align-items-center mb-3 flex-wrap gap-2">
+                            <h4>اضافه محضر</h4>
+                         
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-6 mb-2">
+                               <div class="form-group">
+                                <label class="mb-2">اسم المتهم</label>
+                                <input type="text" class="form-control" placeholder="اسم المتهم"
+                                aria-describedby="search-addon" />
+                               </div>
+                            </div>
+                            <div class="col-lg-6 mb-2">
+                                <div class="form-group">
+                                    <label class="mb-2">تاريخ الميلاد</label>
+                                    <input type="text" class="form-control" placeholder="تاريخ الميلاد"
+                                    aria-describedby="search-addon" />
+                                   </div>
+                            </div>
+                            <div class="col-lg-6 mb-2">
+                                <div class="form-group">
+                                    <label class="mb-2">الرقم القومي</label>
+                                    <input type="text" class="form-control" placeholder="الرقم القومي"
+                                    aria-describedby="search-addon" />
+                                   </div>
+                            </div>
+
+                            <div class="col-lg-6 mb-2">
+                                <div class="form-group">
+                                    <label class="mb-2">العنوان </label>
+                                    <input type="text" class="form-control" placeholder="العنوان "
+                                    aria-describedby="search-addon" />
+                                   </div>
+                            </div>
+                          
+
+                            <div class="col-lg-6 mb-2">
+                                <div class="form-group">
+                                    <label class="mb-2">الوظيفه</label>
+                                    <input type="text" class="form-control" placeholder="الوظيفه"
+                                    aria-describedby="search-addon" />
+                                   </div>
+                            </div>
+                            <div class="col-lg-6 mb-2">
+                                <div class="form-group">
+                                    <label class="mb-2"> الجنسيه</label>
+                                    <input type="text" class="form-control" placeholder="الجنسيه"
+                                    aria-describedby="search-addon" />
+                                   </div>
+                            </div>
+                            <div class="col-lg-6 mb-2">
+                                <div class="form-group">
+                                    <label class="mb-2"> رقم المحضر</label>
+                                    <input type="text" class="form-control" placeholder="رقم المحضر"
+                                    aria-describedby="search-addon" />
+                                   </div>
+                            </div>
+                            <div class="col-lg-6 mb-2">
+                                <div class="form-group">
+                                    <label class="mb-2"> تاريخ تحرير المحضر</label>
+                                    <input type="text" class="form-control" placeholder="تاريخ تحرير المحضر"
+                                    aria-describedby="search-addon" />
+                                   </div>
+                            </div>
+                            <div class="col-lg-6 mb-2">
+                                <div class="form-group">
+                                    <label class="mb-2"> اسم الضابط محرر المحضر</label>
+                                    <input type="text" class="form-control" placeholder="اسم الضابط محرر المحضر"
+                                    aria-describedby="search-addon" />
+                                   </div>
+                            </div>
+                            <div class="col-lg-6 mb-2">
+                                <div class="form-group">
+                                    <label class="mb-2"> مكان وقوع الحادثه</label>
+                                    <input type="text" class="form-control" placeholder="مكان وقوع الحادثه"
+                                    aria-describedby="search-addon" />
+                                   </div>
+                            </div>
+                            <div class="col-lg-6 mb-2">
+                                <div class="form-group">
+                                    <label class="mb-2"> تاريخ وقوع الحادثه</label>
+                                    <input type="text" class="form-control" placeholder="تاريخ وقوع الحادثه"
+                                    aria-describedby="search-addon" />
+                                   </div>
+                            </div>
+
+                            <div class="col-lg-6 mb-2">
+                                <div class="form-group">
+                                    <label class="mb-2">نوع القضيه</label>
+                                    <input type="text" class="form-control" placeholder="نوع القضيه (جنائيه - مدنيه - اداريه)"
+                                    aria-describedby="search-addon" />
+                                   </div>
+                            </div>
+
+                            <div class="d-flex justify-content-center align-items-center mt-4">
+                                <button class="btn btn-outline-secondary">حفظ البيانات</button>
+                                <button style="background-color: #003F9C; color: #fff;" class="btn me-3">اصدار المحضر </button>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+            <div class="wrapper mt-4">
+                <div class="container">
+                    <div class="data-table mb-3">
+                        <div
+                            class="data-table-controls d-flex justify-content-between align-items-center mb-3 flex-wrap gap-2">
+                            <h4>اسئله واجابات الواقعه</h4>
+                         
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-6 mb-2">
+                               <div class="form-group">
+                                <label class="mb-2">السؤال الاول</label>
+                                <input type="text" class="form-control" placeholder="السؤال الاول"
+                                aria-describedby="search-addon" />
+                               </div>
+                            </div>
+                            <div class="col-lg-6 mb-2">
+                                <div class="form-group">
+                                    <label class="mb-2">اجابه السؤال الاول</label>
+                                    <input type="text" class="form-control" placeholder="اجابه السؤال الاول"
+                                    aria-describedby="search-addon" />
+                                   </div>
+                            </div>
+                            <div class="col-lg-6 mb-2">
+                                <div class="form-group">
+                                    <label class="mb-2">السؤال التاني</label>
+                                    <input type="text" class="form-control" placeholder="السؤال التاني"
+                                    aria-describedby="search-addon" />
+                                   </div>
+                            </div>
+
+                            <div class="col-lg-6 mb-2">
+                                <div class="form-group">
+                                    <label class="mb-2">اجابه السؤال التاني </label>
+                                    <input type="text" class="form-control" placeholder="اجابه السؤال التاني "
+                                    aria-describedby="search-addon" />
+                                   </div>
+                            </div>
+                          
+
+                            <div class="col-lg-6 mb-2">
+                                <div class="form-group">
+                                    <label class="mb-2">السؤال التالت</label>
+                                    <input type="text" class="form-control" placeholder="السؤال التالت"
+                                    aria-describedby="search-addon" />
+                                   </div>
+                            </div>
+                            <div class="col-lg-6 mb-2">
+                                <div class="form-group">
+                                    <label class="mb-2"> اجابه السؤال التالت</label>
+                                    <input type="text" class="form-control" placeholder="اجابه السؤال التالت"
+                                    aria-describedby="search-addon" />
+                                   </div>
+                            </div>
+                            <div class="col-lg-6 mb-2">
+                                <div class="form-group">
+                                    <label class="mb-2"> السؤال الرابع </label>
+                                    <input type="text" class="form-control" placeholder="السؤال الرابع "
+                                    aria-describedby="search-addon" />
+                                   </div>
+                            </div>
+                            <div class="col-lg-6 mb-2">
+                                <div class="form-group">
+                                    <label class="mb-2"> اجابه السؤال الرابع</label>
+                                    <input type="text" class="form-control" placeholder="اجابه السؤال الرابع"
+                                    aria-describedby="search-addon" />
+                                   </div>
+                            </div>
+                            <div class="col-lg-6 mb-2">
+                                <div class="form-group">
+                                    <label class="mb-2"> السؤال الخامس</label>
+                                    <input type="text" class="form-control" placeholder="السؤال الخامس"
+                                    aria-describedby="search-addon" />
+                                   </div>
+                            </div>
+                            <div class="col-lg-6 mb-2">
+                                <div class="form-group">
+                                    <label class="mb-2"> اجابه السؤال الخامس</label>
+                                    <input type="text" class="form-control" placeholder="اجابه السؤال الخامس"
+                                    aria-describedby="search-addon" />
+                                   </div>
+                            </div>
+                            <div class="col-lg-6 mb-2">
+                                <div class="form-group">
+                                    <label class="mb-2"> السؤال السادي</label>
+                                    <input type="text" class="form-control" placeholder="السؤال السادي"
+                                    aria-describedby="search-addon" />
+                                   </div>
+                            </div>
+
+                            <div class="col-lg-6 mb-2">
+                                <div class="form-group">
+                                    <label class="mb-2">اجابه السؤال السادس</label>
+                                    <input type="text" class="form-control" placeholder="اجابه السؤال السادس"
+                                    aria-describedby="search-addon" />
+                                   </div>
+                            </div>
+
+                            <div class="d-flex justify-content-center align-items-center mt-4">
+                                <button class="btn btn-outline-secondary">اضافه سؤال</button>
+                                <button style="background-color: #003F9C; color: #fff;" class="btn me-3">حفظ</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="contactModel" tabindex="-1" aria-labelledby="contactModelLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content p-2 rounded-4">
+                    <div class="modal-header border-0 d-flex justify-content-between align-items-center">
+                        <h5 class="modal-title fw-bold" id="addNewsModalLabel">إضافة خبر جديد</h5>
+                        <button type="button" class="btn-close m-0" data-bs-dismiss="modal" aria-label="إغلاق"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="mainTitle" class="form-label fw-semibold">العنوان الرئيسي</label>
+                                <input type="text" class="form-control" id="mainTitle" placeholder="-- نص --">
+                            </div>
+                            <div class="mb-3">
+                                <label for="titleDescription" class="form-label fw-semibold">وصف العنوان</label>
+                                <textarea class="form-control" id="titleDescription" rows="5"
+                                    placeholder="-- نص --&#10;-- نص --&#10;-- نص --"></textarea>
+                            </div>
+                            
+                        </form>
+                    </div>
+                    <div class="modal-footer border-0 justify-content-between">
+                        <button type="button" class="btn second-submit-btn" data-bs-dismiss="modal">إلغاء</button>
+                        <button type="button" class="btn submit-primary-btn">إضافة جديدة +</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+        <script src="app.js"></script>
+</body>
+
+</html>

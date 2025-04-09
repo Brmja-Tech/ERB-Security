@@ -507,3 +507,7 @@ textarea{
     width: 100%;
   }
 }
+
+.table{
+  overflow: auto;
+}
